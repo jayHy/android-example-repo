@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.jayhy.android.example.exoplayer"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.jayhy.android.example.exoplayer"
@@ -55,6 +55,9 @@ dependencies {
     implementation(libs.okhttp3)
     implementation(libs.okhttp3.url.connection)
     implementation(libs.okhttp3.logging.interceptor)
+    implementation(libs.media3.exoplayer)
+    implementation(libs.media3.exoplayer.dash)
+    implementation(libs.media3.ui)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

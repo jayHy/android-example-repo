@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.jayhy.android.example.exoplayer.ui.theme.AndroidexamplerepoTheme
+import com.jayhy.android.example.exoplayer.ui.view.ExoPlayerView
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,13 +21,27 @@ class MainActivity : ComponentActivity() {
         setContent {
             AndroidexamplerepoTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
+//                    Greeting(
+//                        name = "Android",
+//                        modifier = Modifier.padding(innerPadding)
+//                    )
+                    ExoPlayerView(
+                        url = "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
             }
         }
+    }
+}
+
+@Composable
+@Preview(showBackground = true)
+fun PreviewExoPlayer() {
+    AndroidexamplerepoTheme {
+        ExoPlayerView(
+            url = "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+        )
     }
 }
 

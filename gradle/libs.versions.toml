@@ -1,12 +1,13 @@
 [versions]
 agp = "8.7.2"
 kotlin = "2.0.0"
-coreKtx = "1.15.0"
+coreKtx = "1.13.1"
+coreKtxv1331 = "1.13.1"
 junit = "4.13.2"
 junitVersion = "1.2.1"
 espressoCore = "3.6.1"
 lifecycleRuntimeKtx = "2.8.7"
-activityCompose = "1.10.0"
+activityCompose = "1.9.3"
 composeBom = "2024.04.01"
 appcompat = "1.7.0"
 material = "1.12.0"
@@ -16,9 +17,11 @@ okhttp3 = "3.3.1"
 okhttp3UrlConnection = "3.4.1"
 okhttp3LoggingInterceptor = "3.14.9"
 material3 = "1.3.1"
+media3 = "1.4.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-core-ktx-v1331 = { group = "androidx.core", name = "core-ktx", version = "coreKtxv1331" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
@@ -40,6 +43,9 @@ landscapist-gilde = { group = "com.github.skydoves", name = "landscapist-glide",
 okhttp3 = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp3" }
 okhttp3-url-connection = { group = "com.squareup.okhttp3", name = "okhttp-urlconnection", version.ref = "okhttp3UrlConnection" }
 okhttp3-logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp3LoggingInterceptor" }
+media3-exoplayer = { group = "androidx.media3", name = "media3-exoplayer", version.ref = "media3" }
+media3-exoplayer-dash = { group = "androidx.media3", name = "media3-exoplayer-dash", version.ref = "media3" }
+media3-ui = { group = "androidx.media3", name = "media3-ui", version.ref = "media3" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
